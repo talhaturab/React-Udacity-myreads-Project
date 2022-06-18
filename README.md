@@ -1,57 +1,22 @@
 # MyReads Project
 
-This is the completed project for the final assessment project for Udacity's React Fundamentals course. This project is completed without the additional functionality recommneded by udacity to make the project stand out.
+This is the completed project for the final assessment project for Udacity's React Fundamentals course. This project is completed without the additional functionality recommneded by udacity to make the project stand out. The main page offers book shelves. There are 3 shelves. Currently Reading, Want to Read, and Read. You can toggle books between diffferent shelves. There is also a search feature and you can search books. Books that are not on any shelf are categorized as none.
+
+Getting Started
+
 - install all project dependencies with `npm install`
 - start the development server with `npm start`
 
-## What You're Getting
+Prerequisites
+You need to install NodeJS and NPM. You can follow the steps elaborated in the link https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.html
 
-```bash
-├── CONTRIBUTING.md
-├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
-├── package.json # npm package manager file.
+Deployment
+You can run npm start command in the terminal of the related folder to deploy.
 
-## Backend Server
-
-- [`getAll`](#getall)
-- [`update`](#update)
-- [`search`](#search)
-
-### `getAll`
-
-Method Signature:
-
-```js
-getAll();
-```
-
-- Returns a Promise which resolves to a JSON object containing a collection of book objects.
-- This collection represents the books currently in the bookshelves in your app.
-
-### `update`
-
-Method Signature:
-
-```js
-update(book, shelf);
-```
-
-- book: `<Object>` containing at minimum an `id` attribute
-- shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]
-- Returns a Promise which resolves to a JSON object containing the response data of the POST request
-
-### `search`
-
-Method Signature:
-
-```js
-search(query);
-```
-
-- query: `<String>`
-- Returns a Promise which resolves to a JSON object containing a collection of a maximum of 20 book objects.
-- These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
+Built With
+React JS
+HTML
+css
 
 ## Important
 
@@ -60,9 +25,3 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebook/create-react-app/blob/main/packages/cra-template/template/README.md).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
